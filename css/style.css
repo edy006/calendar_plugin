@@ -1,0 +1,33 @@
+.calendar {
+    display: table;
+    width: 100%;
+}
+
+.calendar__day,
+.calendar__day-in_week {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    border-right: 1px solid #f4f4f4;
+    width:  14.2857%;
+    box-sizing: border-box;
+}
+
+.calendar__day {
+    cursor:  pointer;
+}
+
+.calendar__day-in_week {
+    background-color: #333;
+    color: #fff;
+}
+
+.calendar__day:nth-child(7n+1){
+    clear: both;
+}
+
+.calendar__day.previus {
+    background-color: #f4f4f4;
+}
